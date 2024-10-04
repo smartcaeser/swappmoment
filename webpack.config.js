@@ -1,4 +1,7 @@
 const path = require("path");
+const MomentLocalesPlugin = require("moment-locales-webpack-plugin");
+const MomentTimezoneDataPlugin = require("moment-timezone-data-webpack-plugin");
+const currentYear = new Date().getFullYear();
 
 module.exports = {
   entry: "./src/index.ts",
@@ -12,6 +15,16 @@ module.exports = {
   resolve: {
     extensions: [".ts", ".js"],
   },
+  plugins: [
+    new MomentLocalesPlugin({
+      localesToKeep: ["ar"],
+    }),
+    new MomentTimezoneDataPlugin({
+      matchZones: ["Africa/Cairo"],
+      startYear: currentYear - 2,
+      endYear: currentYear + 10,
+    }),
+  ],
   module: {
     rules: [
       {
