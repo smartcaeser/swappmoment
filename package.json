@@ -1,14 +1,20 @@
 {
   "name": "swappmoment",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A simple package to get relative time using Moment.js",
+  "main": "dist/swappmoment.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode production",
+    "test": "jest"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "time",
+    "relative",
+    "moment"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
   "dependencies": {
     "moment": "^2.30.1",
     "moment-timezone": "^0.5.45"
