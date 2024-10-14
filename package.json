@@ -6,7 +6,8 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "webpack --mode production",
-    "test": "jest"
+    "test": "jest",
+    "pack": "npm pack"
   },
   "keywords": [
     "time",
