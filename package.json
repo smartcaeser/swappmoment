@@ -1,6 +1,6 @@
 {
   "name": "swappmoment",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A simple package to get relative time using Moment.js",
   "main": "dist/swappmoment.js",
   "types": "dist/index.d.ts",
